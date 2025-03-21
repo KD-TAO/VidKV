@@ -103,6 +103,9 @@ cache_config={"backend": "QuantizedCacheVLM", "nbits": [1.5, 1.58], "q_group_siz
 )
 ...
 ```
+
+## Evaluation
+The evaluation guidance is coming soon.
 ## Contact
 
 If you have any questions, please feel free to contact with me at KD.TAO@outlook.com

@@ -19,9 +19,102 @@
 ## ⚒️ TODO
 
 * [x] Release Paper 
-* [ ] Release code 
+* [x] Release code 
 * [ ] Support more models
 
+## Install
+##### 1. **Clone this repository and navigate to the LLaVA folder:**
+```bash
+git clone https://github.com/KD-TAO/VidKV.git
+cd VidKV
+```
+
+##### 2. **Install the inference package:**
+```bash
+conda create -n vidkv python=3.10 -y
+conda activate vidkv
+pip install --upgrade pip  # Enable PEP 660 support.
+pip install -e ".[train]"
+# Transformers
+bash env_setup.sh
+```
+
+## VidKV User Guidance
+
+We implemented the VidKV quantization framework based on the **transformers** library. 
+##### 1. **Meet one of the following two requirements:**
+- Use our vidkv environment.
+- Install the supplied version of the **transformers** library in your environment.
+```bash
+cd transformers
+pip install .
+cd ..
+```
+##### 2. **Parameter setting and generation:**
+
+```python
+# Firstly, you need the QUANTIZATION_CONFIG
+### -> 2-bit quantization:
+'''
+QUANTIZATION_CONFIG="{'backend': 'QuantizedCacheLM', 'nbits': 2, 'q_group_size': 32, 'residual_length': 128, 'axis_key': -1, 'axis_value': -1}"
+'''
+### -> 1.5-bit and 2-bit quantization: [1.5, 2] means K-1.5-bit & V-2-bit
+'''
+QUANTIZATION_CONFIG="{'backend': 'QuantizedCacheLM', 'nbits': [1.5, 2], 'q_group_size': 32, 'residual_length': 128, 'axis_key': -1, 'axis_value': -1}"
+'''
+### -> 1.5-bit and 1.58-bit quantization:
+'''
+QUANTIZATION_CONFIG="{'backend': 'QuantizedCacheVLM', 'nbits': [1.5, 1.58], 'q_group_size': 32, 'residual_length': 128, 'axis_key': -1, 'axis_value': -1}"
+'''
+### -> Quantization with STP: 
+'''
+QUANTIZATION_CONFIG="{'backend': 'QuantizedCacheVLMSTP', 'nbits': [1.5, 1.58], 'q_group_size': 32, 'residual_length': 128, 'axis_key': -1, 'axis_value': -1, "vidkv_stp": 0.2}"
+'''
+# Now QuantizedCacheVLMSTP only supports the llava-onevision model. Other models we will support later
+
+# Secondly, you can use during model generation
+out = model.generate(**inputs, do_sample=False, max_new_tokens=20, cache_implementation="quantized", cache_config=QUANTIZATION_CONFIG)
+```
+
+## Demo
+- We provide a demo script for inference using the LLaVA-OV model:
+```bash
+python demo.py
+```
+- You can change the quantization Settings here:
+```python
+...
+outputs = model.generate(
+input_ids,
+attention_mask=attention_mask, # Add attention mask
+images=image_tensors,
+image_sizes=image_sizes,
+do_sample=False,
+temperature=0,
+max_new_tokens=1000,
+modalities=["video"],
+output_attentions=False,
+use_cache = True,
+return_dict_in_generate=True,
+output_hidden_states=True,
+cache_implementation="quantized",
+# VidKV
+cache_config={"backend": "QuantizedCacheVLM", "nbits": [1.5, 1.58], "q_group_size": 32, "residual_length": 128,"axis_key":-1, "axis_value":-1},
+)
+...
+```
 ## Contact
 
 If you have any questions, please feel free to contact with me at KD.TAO@outlook.com
+## Citation
+
+If you find this work useful for your research, please consider citing our paper:
+
+```bibtex
+@article{vidkv,
+  title={Plug-and-Play 1.x-Bit KV Cache Quantization for Video Large Language Models},
+  author={Tao, Keda and You, Haoxuan and Sui, Yang and Qin, Can and Wang, Huan},
+  journal={arXiv preprint arXiv:2503.16257},
+  year={2025}
+}
+```

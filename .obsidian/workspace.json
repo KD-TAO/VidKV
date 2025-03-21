@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "2909687735bda19b",
+    "type": "split",
+    "children": [
+      {
+        "id": "038802e5f655b1ea",
+        "type": "tabs",
+        "dimension": 61.00981767180925,
+        "children": [
+          {
+            "id": "2bc681687a310eb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3f50ddb7139dd7d1",
+        "type": "tabs",
+        "dimension": 38.99018232819074,
+        "children": [
+          {
+            "id": "b14c75c7b30a1d3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d2d62194b5da38c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "387ac44b6821f985",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b0b10f2e1c13bb9b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c4f2e8fe2c8ae2d5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0254cddf818e54fa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "fdf376c9b70574ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9c9a3469ce34132",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2f16edc84f85e216",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
+            }
+          },
+          {
+            "id": "0b84a97aa387cb7f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
+            }
+          },
+          {
+            "id": "ea49fbc936612974",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ff5895bc928e5c6c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "2bc681687a310eb4",
+  "lastOpenFiles": [
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/Internal-EVA02-CLIP-10B-14.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/Internal-EVA02-CLIP-10B-14-448.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/EVA02-CLIP-bigE-14.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/EVA02-CLIP-L-14-336.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/EVA02-CLIP-bigE-14-plus.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/EVA02-CLIP-L-14.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/EVA02-CLIP-B-16.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/EVA01-CLIP-g-14.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/EVA01-CLIP-g-14-plus.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/EVA01-CLIP-B-16.json",
+    "llava/model/multimodal_encoder/dev_eva_clip/eva_clip/model_configs/EVA-CLIP-8B.json",
+    "llava/serve/examples/waterview.jpg",
+    "llava/serve/examples/extreme_ironing.jpg",
+    "未命名/serve/examples/waterview.jpg",
+    "未命名/serve/examples/extreme_ironing.jpg",
+    "transformers/tests/fixtures/tests_samples/COCO/coco_panoptic/000000039769.png",
+    "transformers/docs/source/en/model_doc/zamba2.md",
+    "transformers/docs/source/en/model_doc/zoedepth.md",
+    "transformers/docs/source/en/model_doc/zamba.md",
+    "transformers/docs/source/en/model_doc/yoso.md",
+    "transformers/docs/source/en/model_doc/xls_r.md",
+    "transformers/docs/source/en/model_doc/yolos.md",
+    "transformers/docs/source/en/model_doc/xlm-roberta-xl.md",
+    "transformers/docs/source/en/model_doc/xmod.md",
+    "transformers/docs/source/en/model_doc/xlsr_wav2vec2.md",
+    "transformers/docs/source/en/model_doc/xlm.md",
+    "transformers/docs/source/en/model_doc/xlnet.md",
+    "transformers/docs/source/en/model_doc/xlm-v.md",
+    "transformers/docs/source/en/model_doc/xlm-roberta.md",
+    "transformers/docs/source/en/model_doc/xlm-prophetnet.md",
+    "transformers/docs/source/en/model_doc/xclip.md",
+    "transformers/docs/source/en/model_doc/wavlm.md",
+    "transformers/docs/source/en/model_doc/xglm.md",
+    "transformers/docs/source/en/model_doc/whisper.md",
+    "transformers/docs/source/en/model_doc/vitpose.md",
+    "transformers/docs/source/en/model_doc/wav2vec2_phoneme.md",
+    "transformers/docs/source/en/model_doc/wav2vec2.md",
+    "transformers/docs/source/en/model_doc/wav2vec2-bert.md",
+    "transformers/docs/source/en/model_doc/wav2vec2-conformer.md",
+    "transformers/docs/source/en/model_doc/vitmatte.md",
+    "transformers/docs/source/en/model_doc/vivit.md",
+    "transformers/tests/fixtures/tests_samples/COCO/000000004016.png",
+    "transformers/tests/fixtures/tests_samples/COCO/000000039769.png"
+  ]
+}
